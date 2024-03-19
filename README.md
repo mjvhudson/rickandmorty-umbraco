@@ -1,5 +1,5 @@
 # rickandmorty-umbraco
-Umbraco project containing dashboard to load Rick and Morty characters from RickAndMortyAPI.
+Umbraco project containing dashboard to load Rick and Morty characters from https://rickandmortyapi.com/.
 
 To run the project:
 
