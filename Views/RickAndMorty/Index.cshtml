@@ -1,0 +1,30 @@
+﻿@inject IContentService ContentService
+@using System.Data
+@using System.Text.Json
+@using RickAndMortyProject.App_Code.Entities
+@using RickAndMortyProject.App_Code.Helpers
+@using RickAndMortyProject.Models.RickAndMorty
+@using Umbraco.Cms.Core.Services
+
+@model CharactersModel
+
+@functions {
+    /// <summary>
+    /// Load characters upon button pressed
+    /// </summary>
+    public void OnPostRunMethod()
+    {
+        Model.LoadCharacters(ContentService);
+    }
+}
+
+@{
+    // Load characters upon loading page
+
+    Model.LoadCharacters(ContentService);
+}
+
+<h2>Get Rick And Morty Characters</h2>
+<form method="post">
+    <button type="button" asp-page-handler="RunMethod">Get Characters</button>
+</form>

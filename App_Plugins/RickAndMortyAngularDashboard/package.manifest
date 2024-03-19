@@ -1,0 +1,17 @@
+﻿{
+  "dashboards": [
+    {
+      "alias": "rickAndMortyAngularDashboard",
+      "view": "/App_Plugins/RickAndMortyAngularDashboard/RickAndMortyAngularDashboard.html",
+      "sections": [ "content" ],
+      "access": [
+        { "deny": "translator" },
+        { "grant": "admin" }
+      ]
+    }
+  ],
+  "javascript": [
+    "~/App_Plugins/RickAndMortyAngularDashboard/rickandmortyangulardashboard.controller.js",
+    "~/App_Code/RickAndMortyProject/rickandmorty.resource.js"
+  ]
+}
