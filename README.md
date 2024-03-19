@@ -9,7 +9,7 @@ In VS Code: Open the project in a workspace and generate a launch.json file to r
 
 The project will run on localhost in a browser, please navigate to "localhost:<port>/umbraco" to open the backoffice.
 
-Please sign in as admin with the email: mjvhudson@outlook.com and password: SecurePassword!
+Please sign in as admin with the email: mjvhudson<span>@</span>outlook.com and password: SecurePassword!
 
 An AllCharacters document should already exist. Please open the Rick And Morty Characters dashboard. Upon opening this dashboard, the characters will begin being imported into content nodes. (As this is not asyncronous, the dashboard UI will not load until the import has finished.)
 Please open the AllCharacters document in the content menu. This should now be populated with Character nodes (as shown).
@@ -28,4 +28,3 @@ Existing Content: I decided to have the my code check for existing content, base
 
 User Feedback: Due to issues with the UI in my dashboards I did not successfully implement any user feedback, although did attempt to show the number of characters imported in the Angular dashboard.
 I also noticed there is a notification service, perhaps this could be used to display to the user when nodes have been created?
-
